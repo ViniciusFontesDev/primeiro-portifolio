@@ -1,0 +1,48 @@
+.portifolio{
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    position: relative;
+}
+
+.portifolio-img{
+    filter: grayscale(.4);
+    transition: .5s;
+    border-radius: 4px;
+}
+
+.portifolio-img:hover{
+    filter: grayscale(0);
+}
+
+.portifolio-img:active{
+    filter: grayscale(0);
+    transition: .1s;
+}
+
+.portifolio-itens{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.portifolio .subtitulo{
+    color: #e0e0e0;
+}
+
+@media (max-width: 800px){
+    .portifolio{
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+    .portifolio-sites{
+        justify-items: center;
+    }
+    .portifolio .subtitulo{
+        color: #141414;
+    }
+}
+
